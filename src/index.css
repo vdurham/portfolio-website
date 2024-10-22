@@ -1,13 +1,177 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Open+Sans:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.4; /* Reduced line-height for a more compact look */
+  font-size: 0.9rem; /* Slightly reduced font size */
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Big Shoulders Display', cursive;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 800; /* Extra bold */
+  text-align: left;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  color: #aaa;
+}
+
+a {
+  color: #fff; /* Change link color to white */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ddd; /* Slightly lighter on hover */
+}
+
+.title-wrapper {
+  text-align: left;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 800; /* Extra bold */
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.7rem;
+  color: #888;
+  margin: 0;
+}
+
+.icon-links {
+  /* gap: 10px; */
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.icon-links a {
+  font-size: 2rem;
+  color: #fff; /* White color */
+}
+
+.icon-links a:hover {
+  color: #ddd; /* Light on hover */
+}
+
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #111;
+}
+
+.footer-text {
+  color: #aaa;
+}
+
+.section {
+  padding: 2rem 0; /* Reduced padding */
+}
+
+.section-title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #fff;
+  font-weight: 800; /* Extra bold */
+  font-size: 2.5rem; /* Consistent size */
+  margin-bottom: 2rem; /* Corrected margin */
+  text-align: left;
+}
+
+.project-title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #fff;
+  font-weight: 800; /* Extra bold */
+  font-size: 2.5rem; /* Consistent size */
+  text-align: left;
+}
+
+.project-card-container {
+  position: relative;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  height: 680px;
+  border-radius: 10px;
+}
+
+.project-card.selected {
+  width: 85%;
+  height: 85%;
+  padding: 4rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-title {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.project-description {
+  color: #bbb;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.section-text {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.markdown-container {
+  color: #bbb;
+  font-size: 1.2rem;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.image {
+  width: auto;
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #ccc;
 }
